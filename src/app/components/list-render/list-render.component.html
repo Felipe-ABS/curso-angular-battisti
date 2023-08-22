@@ -1,0 +1,11 @@
+<div class="aulas">
+  <h2>Animais:</h2>
+  <ul>
+    <li *ngFor="let teste of testes">{{teste}}</li>
+    <!-- o animal/teste são criados pelo próprio ngFor, e ele repete na quantidade de items que tem na lista -->
+    <!-- e o animals/testes é uma propriedade no component.ts, que é de onde o loop está recebendo os dados para criar a lista -->
+    <li *ngFor="let animal of animals">
+      Nome: {{ animal.name }} - Tipo: {{ animal.type }}
+    </li>
+  </ul>
+</div>
