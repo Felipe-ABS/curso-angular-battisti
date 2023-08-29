@@ -14,8 +14,8 @@ export class TwoWayBindingComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  submitName() : void {
-    this.submittedName = this.name;
+  submitName(nameFromAttribute: string) : void {
+    this.submittedName = nameFromAttribute;
   }
 
 }

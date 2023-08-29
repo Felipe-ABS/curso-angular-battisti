@@ -4,7 +4,7 @@
     <input type="text" [(ngModel)]="name"
       name="name"
       placeholder="Digite o seu nome"/>
-    <input type="submit" value="Enviar" (click)="submitName()"/>
+    <input type="submit" value="Enviar" (click)="submitName(name)"/>
   </form>
   <div *ngIf="name !== ''">
     <p>O nome é: {{ submittedName }}</p>
